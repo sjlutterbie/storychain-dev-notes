@@ -1,0 +1,146 @@
+/* VARIABLES */
+
+/* LAYOUT */
+
+* {
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+header {
+  background: #aaa;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 50px;
+}
+
+  .site-title {
+    padding: 8px;
+    flex-grow: 1;
+  }
+  
+  .account-nav {
+    padding: 8px;
+  }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+    
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+  .network-panel {
+    width: 100%;
+    background: #ccc;
+    height: calc(100vh - 264px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .story-chain {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+  }
+    
+    .story-link {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 4px;
+      margin: 4px;
+      line-height: 1.15;
+      text-align: left;
+      width: 320px;
+      min-width: 316px;
+    }
+  
+    .story-link p {
+      font-size: 14px;
+    }
+  
+    .story-controls {
+      width: 100%;
+      padding: 8px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: space-evenly;
+    }
+    
+    .story-controls button {
+      margin: 0px 4px;
+      font-size: 20px;
+    }
+
+
+footer {
+  background: #aaa;
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  z-index: 8px;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* TYPOGRAPHY */
+
+html {
+  font-size: 22px;
+  font-family: 'Roboto', 'San Francisco', sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+/* COMMON COMPONENTS */
+
+button, input[type="submit"] {
+  width: 130px; 
+  padding: 4px;
+  font-size: 22px;
+}
+
+input {
+  font-size: 22px;
+}
