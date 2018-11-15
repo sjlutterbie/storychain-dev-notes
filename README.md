@@ -22,7 +22,7 @@ uncover how different story chains interconnect.
 
 **Saga** - A full set of interconnected `Story Chains`.
 
-  * Each `Saga` is defined by a title, summary statement, and its `Starting Ring`.
+  * Each `Saga` is defined by a title, description, and its `Starting Ring`.
   
 **Starting Ring** - A set of 5 or more `storyLinks` that create a looping
   `storyChain`.
@@ -47,11 +47,11 @@ As a user, I should be able to:
 * View a random `storyLink` and contribute a new `storyLink` to the `Story Chain`.
 * Contribute to a `Story Chain` to which I have previously contributed, IF
     I have not created any of the previous 5 `storyLinks` in the `Story Chain`.
-* Reference a character within a `storyLink` using the `@ identifier`.
-* Reference a topic/theme within a `storyLink` using the `# identifier`.
-* Reference a location within a `storyLink` using the `> identifier`.
-* Tag a `storyLink` as 'the end of a story'.
-* Tag a `storyLink` as 'nsfw'.
+* ~~Reference a character within a `storyLink` using the `@ identifier`.~~
+* ~~Reference a topic/theme within a `storyLink` using the `# identifier`.~~
+* ~~Reference a location within a `storyLink` using the `> identifier`.~~
+* Tag a `storyLink` as 'End of story'.
+* Tag a `storyLink` as 'NSFW'.
 
 ### Reading storyLinks
 
@@ -65,39 +65,39 @@ As a user, I should be able to:
   * Which `storyLinks` I have created.
 * Upvote or downvote a `storyLink`.
 * Toggle my vote for a `storyLink` between `[up|down|none]`.
-* Tag a `storyLink` as 'the end of a story'.
-* Tag a `storyLink` as 'nsfw'.
-* `Bookmark` `storyLinks` for quick access.
-* Save a `Story Chain` by identifying `first parent` and
-    `last child` `storyLinks`.
-* Export saved `Story Chains` for access outside the app.
+* Tag a `storyLink` as 'End of Story'.
+* Tag a `storyLink` as 'NSFW'.
+* ~~`Bookmark` `storyLinks` for quick access.~~
+* ~~Save a `Story Chain` by identifying `first parent` and
+    `last child` `storyLinks`.~~
+* ~~Export saved `Story Chains` for access outside the app.~~
 
 ### Social
 
 As a user, I should be able to:
 
-* Add `friends` within the app.
-* Invite `friends` to add `storyLinks` to those I've created.
-* See `storyLinks` my `friends` have created (if I have access to the link).
-* See the `storyLinks` my `friends` have `bookmarked`.
-* See which unread `storyLinks` point towards one of my `friends'` `storyLinks`.
-* Invite `friends` to a `Saga` I created.
+* ~~Add `friends` within the app.~~
+* ~~Invite `friends` to add `storyLinks` to those I've created.~~
+* ~~See `storyLinks` my `friends` have created (if I have access to the link).~~
+* ~~See the `storyLinks` my `friends` have `bookmarked`.~~
+* ~~See which unread `storyLinks` point towards one of my `friends'` `storyLinks`.~~
+* ~~Invite `friends` to a `Saga` I created.~~
 
 ### Sagas
 
 As a user, I should be able to:
 
-* Create a new `Saga`.
-  * Create the `title` & `description` for a new `Saga`.
-  * Seed a new `Saga` with a `Starting Ring`.
-* Make a `Saga` I have created `public` or `invite-only`.
-* Select which `Saga` to access.
+* ~~Create a new `Saga`.~~
+  * ~~Create the `title` & `description` for a new `Saga`.~~
+  * ~~Seed a new `Saga` with a `Starting Ring`.~~
+* ~~Make a `Saga` I have created `public` or `invite-only`.~~
+* ~~Select which `Saga` to access.~~
 
 ### Credits
 
 As a user, I should be able to:
 
-* Earn `credits` to access `ancestor storyLinks` by:
-  * Achieving certain quality contribution goals (e.g., 1k upvotes).
-  * Buy `credits` via micro-transactions (e.g., $1.99 per `credit`).
-* Use `credits` to access `friends'` `created`/`bookmarked` `storyLinks`.
+* ~~Earn `credits` to access `ancestor storyLinks` by:~~
+  * ~~Achieving certain quality contribution goals (e.g., 1k upvotes).~~
+  * ~~Buy `credits` via micro-transactions (e.g., $1.99 per `credit`).~~
+* ~~Use `credits` to access `friends'` `created`/`bookmarked` `storyLinks`.~~
