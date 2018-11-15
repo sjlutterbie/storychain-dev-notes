@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
-header {
+header, main, footer {
   width: 100%;
-  background: #aaa;
   padding: 8px;
-  
+}
+
+header {
+  background: #aaa;
+
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -29,6 +32,60 @@ header {
     .landing-page-topnav button {
       margin: 4px;
     }
+    
+main {
+  min-height: 100vh;
+  
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+  .intro-section {
+    background: #eee;
+  }
+  
+    .strapline, .signup-login-area {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .strapline {
+      background: #aaa;
+    }
+    
+    .signup-login-area {
+      background: #ccc;
+    }
+    
+    .signup-login-area .mobile {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    
+      .signup-login-row {
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+      }
+      
+    .learn-more-row {
+      padding: 16px;
+    }
+
+  .about-section {
+    background: #ddd;
+  }
+
+footer {
+  background: #aaa;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
 
 
 /* TYPOGRAPHY */
@@ -45,6 +102,8 @@ h1 {
 
 h2 {
   font-size: 24px;
+  padding-bottom: 4px;
+  text-align: center;
 }
 
 h3 {
@@ -53,4 +112,16 @@ h3 {
 
 h4 {
   font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+/* COMMON COMPONENTS */
+
+button {
+  width: 90px;
+  padding: 4px;
 }
