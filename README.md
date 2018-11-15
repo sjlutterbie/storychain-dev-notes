@@ -6,29 +6,30 @@ uncover how different story chains interconnect.
 
 ## Definitions & details
 
-**storyLink** - A single unit of narrative, max 200 characters in length.
+**storyLink** - A single unit of narrative, ast most 200 characters in length.
 
-  * Each `storyLink` has one `parent storyLink`
-  * Each `storyLink` may have zero or more `child storyLinks`
+  * Each `storyLink` has one `parent storyLink`.
+  * Each `storyLink` may have zero or more `child storyLinks`.
 
 **Story Chain** - A ordered set of `storyLinks` that share a parent-child lineage
   from a `first parent storyLink` to a `last child storyLink`.
 
 **Story Network** - A hierarchical set of `storyLinks`, containing multiple
   branching `Story Chains`, connected by a single `first parent storyLink`.
+  
+  * Each user will have one or more `Story Networks`, which will be limited by
+      their access `[read|unread|hidden]` to each individual `storyLink`.
 
 **Saga** - A full set of interconnected `Story Chains`.
 
-  * Each `Saga` is defined by a title, summary statement, and its `Starting Ring`
+  * Each `Saga` is defined by a title, summary statement, and its `Starting Ring`.
   
 **Starting Ring** - A set of 5 or more `storyLinks` that create a looping
   `storyChain`.
 
   * Using a `Starting Ring` ensures that every link in a Saga has a single parent.
   * Because a ring can ONLY be created as a `Starting Ring`, it ensures that users
-      can clearly identify when they've discovered the full origin of the Saga.
-
-
+      can clearly identify when they've discovered the full origin of the `Saga`.
 
 ## User stories
 
