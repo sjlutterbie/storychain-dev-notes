@@ -1,3 +1,12 @@
+/* VARIABLES */
+
+:root {
+  
+  /* Breakpoint widths */
+  --tablet-breakpoint: 600;
+  
+}
+
 /* LAYOUT */
 
 * {
@@ -42,6 +51,9 @@ main {
 
   .intro-section {
     background: #eee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
   
     .strapline, .signup-login-area {
@@ -63,6 +75,10 @@ main {
       align-items: center;
     }
     
+    .signup-login-area .tablet {
+      display: none;
+    }
+    
       .signup-login-row {
         width: 100%;
         padding: 8px;
@@ -70,6 +86,30 @@ main {
         flex-flow: row nowrap;
         justify-content: space-evenly;
       }
+      
+    /* Signup area responsive design */
+    @media screen and (min-width: 600px) {
+     
+      .strapline {
+        width: calc(100% - 300px);
+        max-width: 540px;
+      }
+      
+      .signup-login-area {
+        width: 300px;
+        background: #888;
+      }
+      
+      .signup-login-area .mobile {
+        display: none;
+      }
+      
+      .signup-login-area .tablet {
+        display: flex;
+      }
+      
+      
+    }
       
     .learn-more-row {
       padding: 16px;
