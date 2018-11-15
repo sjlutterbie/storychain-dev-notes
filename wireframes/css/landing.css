@@ -1,12 +1,5 @@
 /* VARIABLES */
 
-:root {
-  
-  /* Breakpoint widths */
-  --tablet-breakpoint: 600;
-  
-}
-
 /* LAYOUT */
 
 * {
@@ -246,7 +239,7 @@ p {
 
 /* COMMON COMPONENTS */
 
-button {
+button, input[type="submit"] {
   width: 130px; 
   padding: 4px;
   font-size: 22px;
