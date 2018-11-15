@@ -106,9 +106,58 @@ main {
       
       .signup-login-area .tablet {
         display: flex;
+        flex-flow: column nowrap;
       }
       
-      
+        ul.signup-login-toggle {
+          display: flex;
+          flex-flow: row nowrap;
+        }
+        
+          .signup-login-toggle li {
+            flex-grow: 1;
+            text-align: center;
+            padding: 8px;
+          }
+          
+          .signup-login-toggle li:first-child {
+            background: #666;
+          }
+          
+          .signup-login-toggle li:last-child {
+            background: #aaa;
+          }
+          
+        .signup-login-area form {
+          padding: 8px;
+        }
+        
+          .signup-login-area .fieldset-flex {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+          }
+          
+          .signup-login-area legend, .signup-login-area label {
+            display: flex;
+            flex-flow: row-nowrap;
+            padding: 4px;
+          }
+          
+          .signup-login-area legend {
+            align-items: center;
+          }
+          
+          .signup-login-area label {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .signup-login-area input {
+            margin: 0px 4px;
+          }
+          
     }
       
     .learn-more-row {
