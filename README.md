@@ -4,6 +4,32 @@ StoryChain is a collaborative storytelling platform where users can add 'storyLi
 to story chains, follow the stories that evolve from the storyLinks they create, and
 uncover how different story chains interconnect.
 
+## Definitions & details
+
+**storyLink** - A single unit of narrative, max 200 characters in length.
+
+  * Each `storyLink` has one `parent storyLink`
+  * Each `storyLink` may have zero or more `child storyLinks`
+
+**Story Chain** - A ordered set of `storyLinks` that share a parent-child lineage
+  from a `first parent storyLink` to a `last child storyLink`.
+
+**Story Network** - A hierarchical set of `storyLinks`, containing multiple
+  branching `Story Chains`, connected by a single `first parent storyLink`.
+
+**Saga** - A full set of interconnected `Story Chains`.
+
+  * Each `Saga` is defined by a title, summary statement, and its `Starting Ring`
+  
+**Starting Ring** - A set of 5 or more `storyLinks` that create a looping
+  `storyChain`.
+
+  * Using a `Starting Ring` ensures that every link in a Saga has a single parent.
+  * Because a ring can ONLY be created as a `Starting Ring`, it ensures that users
+      can clearly identify when they've discovered the full origin of the Saga.
+
+
+
 ## User stories
 
 * As a site visitor, I should be able to:
@@ -40,8 +66,11 @@ uncover how different story chains interconnect.
   * See which unread storyLinks point towards one of my friends' storyLinks
   * Save a story chain by identifying beginning & end links
   * Export saved story chains for access outside the app
-  * Submit a 'starting ring' to seed a new 'saga'
-    * 'Saga' - A full set of interconnected story chains.
-    * A 'starting ring' - A set of storyLinks that create a looping narrative,
-        from which every story chain in the Saga descends. _Using a 'starting
-        ring' ensures that every link in a Saga has a single parent._
+  * Create a new 'Saga' - a full set of interconnected story chains.
+    * Create the title & description for a new Saga
+    * Seed a new Saga with a 'starting ring' - A set of storyLinks that create
+        a looping narrative, from which every story chain in the Saga descends.
+        _Using a 'starting ring' ensures that every link in a Saga has a single
+        parent._
+  * Select which Saga to access.
+  * Invite friends to a Saga I created.
