@@ -1,0 +1,56 @@
+/* LAYOUT */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background: #aaa;
+  padding: 8px;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+  .site-title {
+    flex-grow: 1;
+  }
+  
+  .landing-page-topnav {
+    flex-grow: 0;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  
+    .landing-page-topnav button {
+      margin: 4px;
+    }
+
+
+/* TYPOGRAPHY */
+
+html {
+  font-size: 14px;
+  font-family: 'Roboto', 'San Francisco', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
