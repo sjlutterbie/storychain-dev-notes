@@ -55,17 +55,18 @@ main {
 }
 
   .intro-section {
+    width: 100%;
     background: #eee;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   
     .strapline, .signup-login-area {
       width: 100%;
       padding: 8px;
     }
-  
+    
     .strapline {
       background: #aaa;
     }
@@ -93,15 +94,15 @@ main {
       }
       
     /* Signup area responsive design */
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 800px) {
      
       .strapline {
-        width: calc(100% - 300px);
-        max-width: 540px;
+        width: calc(90% - 400px);
+        max-width: 1000px;
       }
       
       .signup-login-area {
-        width: 300px;
+        width: 400px;
         background: #888;
       }
       
@@ -145,7 +146,7 @@ main {
           
           .signup-login-area legend, .signup-login-area label {
             display: flex;
-            flex-flow: row-nowrap;
+            flex-flow: column nowrap;
             padding: 4px;
           }
           
@@ -161,6 +162,11 @@ main {
           
           .signup-login-area input {
             margin: 0px 4px;
+            width: 100%;
+          }
+          
+          .signup-login-area input[type="submit"] {
+            margin-top: 8px;
           }
           
     }
@@ -210,37 +216,42 @@ footer {
 /* TYPOGRAPHY */
 
 html {
-  font-size: 14px;
+  font-size: 22px;
   font-family: 'Roboto', 'San Francisco', sans-serif;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 34px;
   text-align: center;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   padding-bottom: 4px;
   text-align: center;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.25;
 }
 
 /* COMMON COMPONENTS */
 
 button {
-  width: 90px;
+  width: 130px; 
   padding: 4px;
+  font-size: 22px;
+}
+
+input {
+  font-size: 22px;
 }
