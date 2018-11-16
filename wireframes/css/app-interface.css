@@ -1,4 +1,10 @@
-/* VARIABLES */
+/* DEV NOTE */
+
+/* Comment out .modal-shim to view 'Add link to the chain' model form */
+
+.modal-shim {
+  display: none; 
+}
 
 /* LAYOUT */
 
@@ -112,10 +118,8 @@ main {
       .story-controls {
         height: 60px;
       }
-      
-    
-  }
 
+  }
 
 footer {
   background: #aaa;
@@ -173,4 +177,69 @@ button, input[type="submit"] {
 
 input {
   font-size: 22px;
+}
+
+/* ADD LINK MODAL SHIM */
+
+.add-story-link-modal {
+  z-index: 10;
+  position: absolute;
+  left: calc((100% - 300px) * .5);
+  top:  calc((100% - 360px) * .5);
+  width: 300px;
+  height: 360px;
+  background: #fff;
+  border: 1px solid black;
+  margin: auto;
+  padding: 8px 4px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+  .add-story-link-modal form {
+  }
+  
+  .add-story-link-modal .fieldset-flex {
+    display: flex;
+    flex-flow: colum nowrap;
+    align-items: center;
+  }
+  
+  .add-story-link-modal .story-link {
+    width: 282px;
+    min-width: 282px;
+    padding: 8px;
+    margin: 4px;
+  }
+  
+  .add-story-link-modal textarea {
+    width: 282px;
+    padding: 8px;
+    margin: 4px;
+    background: #eee;
+  }
+  
+  .add-story-link-modal .fieldset-flex {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .add-story-link-modal .form-actions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.modal-shim {
+  width: 100%;
+  height:100vh;
+  z-index: 9;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0px;
 }
