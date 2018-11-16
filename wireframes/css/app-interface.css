@@ -86,6 +86,36 @@ main {
       font-size: 16px;
     }
 
+  /* Responsive adjustments */
+  @media screen and (min-width: 800px) {
+    
+    main {
+      flex-flow: row nowrap;
+    }
+    
+    .network-panel {
+       width: calc(100% - 330px);
+       height: calc(100vh - 80px);
+    }
+    
+    .desktop-right-column {
+      width: 330px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    
+      .story-chain {
+        flex-grow: 1;
+        flex-flow: column nowrap;
+      }
+      
+      .story-controls {
+        height: 60px;
+      }
+      
+    
+  }
+
 
 footer {
   background: #aaa;
