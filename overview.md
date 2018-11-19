@@ -124,3 +124,4 @@ For desktop (and larger tablet) users, the __network view__ and __reading view__
   will be presented side-by-side.
   
 ![Mobile reading and network views](https://github.com/sjlutterbie/storychain-dev-notes/blob/overview/img/Reading_Network_Views_2018_11_19.jpg)
+![Mobile reading and network views](https://github.com/sjlutterbie/storychain-dev-notes/blob/overview/img/Desktop_Combined_Views_2018_11_19.jpg)
