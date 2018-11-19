@@ -87,3 +87,5 @@ The __'network view'__ shows how their current __moment__ fits within the larger
   will serve primarily for jumping from moment to moment. Down the line, this
   view may be used for highlighting popular or individually bookmarked
   __moments__, selecting and sharing story branches with other users.
+  
+![Reading and Network view sketches](./img/Reading_Network_Views_2018_11_19png)
