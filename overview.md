@@ -88,4 +88,4 @@ The __'network view'__ shows how their current __moment__ fits within the larger
   view may be used for highlighting popular or individually bookmarked
   __moments__, selecting and sharing story branches with other users.
   
-![Reading and Network view sketches](https://github.com/sjlutterbie/storychain-dev-notes/img/Reading_Network_Views_2018_11_19.png)
+![Reading and Network view sketches](https://github.com/sjlutterbie/storychain-dev-notes/blob/overview/img/Reading_Network_Views_2018_11_19.jpg)
