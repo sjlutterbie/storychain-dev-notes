@@ -64,6 +64,8 @@ The core experience in __*Premise*__ involves reading through the moments that
   users would also be able to 'bookmark' specific __moments__, or start at a
   randomly selected, unread __moment__ somewhere within the __story network__.
 
+[User Stories and Journeys](../blob/master/userStories.md)
+
 ### Navigating a story network
 
 As the user encounteres each __moment__, they are presented with four primary
