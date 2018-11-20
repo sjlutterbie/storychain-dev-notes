@@ -1,103 +1,125 @@
-# StoryChain: Dev Notes
+## Overview
 
-StoryChain is a collaborative storytelling platform where users can add 'storyLinks'
-to story chains, follow the stories that evolve from the storyLinks they create, and
-uncover how different story chains interconnect.
-
-## Definitions & details
-
-**storyLink** - A single unit of narrative, ast most 200 characters in length.
-
-  * Each `storyLink` has one `parent storyLink`.
-  * Each `storyLink` may have zero or more `child storyLinks`.
-
-**Story Chain** - A ordered set of `storyLinks` that share a parent-child lineage
-  from a `first parent storyLink` to a `last child storyLink`.
-
-**Story Network** - A hierarchical set of `storyLinks`, containing multiple
-  branching `Story Chains`, connected by a single `first parent storyLink`.
+__*Premise*__ is a collaborative storytelling platform on which people can
+  create and explore multiple stories and branching narratives, where each
+  story grows from a shared central premise.
   
-  * Each user will have one or more `Story Networks`, which will be limited by
-      their access `[read|unread|hidden]` to each individual `storyLink`.
+In the full version, users will be able to create their own 'central premises',
+  and make them available for collaborative building. In the MVP release, there
+  will be a single, default central premise.
 
-**Saga** - A full set of interconnected `Story Chains`.
+## Target audience
 
-  * Each `Saga` is defined by a title, summary statement, and its `Starting Ring`.
+__*Premise*__ primarily targets individuals who enjoy:
+
+* Collaborative worldbuilding and storytelling
+* Role-playing games
+* Canon-based literature, such as the *Lord of the Rings*, *Harry Potter*,
+    and *Star Wars* series.
+* Creating and consuming fanfiction
+* Exploring the 'butterly effect', where a small change within any given moment
+    can lead to very different futures.
+* Creative writing exercises
+
+## Structure
+
+The fundamental unit within __*Premise*__ is a __'moment'__ - a user-created
+  piece of text no more than 200 characters long. Each individual __moment__
+  may be a snippet of dialogue, exposition, descriptive text, etc.
   
-**Starting Ring** - A set of 5 or more `storyLinks` that create a looping
-  `storyChain`.
+__Moments__ are connected sequentially to create a __'story branch'__ or single
+  narrative thread within a range of options. Each __story branch__ has
+  `first moment` and `last moment` endpoints.
 
-  * Using a `Starting Ring` ensures that every link in a Saga has a single parent.
-  * Because a ring can ONLY be created as a `Starting Ring`, it ensures that users
-      can clearly identify when they've discovered the full origin of the `Saga`.
+The __'story network'__ is the overall collection of, and relationships between,
+  a group of __moments__. Every __moment__ has a single `parent moment`, but may
+  have any number of `child moments`. This allows for multiple __story branches__
+  evolving from a single `first moment`.
 
-## User stories
+At the core of every __story network__ sits a __'central premise'__ - a set of
+  5 __moments__ connected within the __story network__ in a ring.
+  __Central premises__ are designed to 'set the stage' for a __story network__,
+  and create the core theme around which all _story branches__ in the network
+  relate. For example, a __central premise__ might:
 
-### Pre-login:
+* Describe the high-level geography, politics, and time period of a ficitional
+    world in which multiple stories will be set.
+* Describe a murder scene, from which several genres of mystery will emerge.
+* Introduce the relationships between several characters, from which many
+    episodes of a soap opera evolve.
 
-As a site visitor, I should be able to:
+A __central premise__ thus creates the central concept or setting from which any
+  number of __story branches__ may emerge. The __story branches__, in effect,
+  represent parallel universes in which the core concept remains the same, but
+  the details and narrative flow are entirely up for grabs. Each subdivision
+  along a __story branch__ creates a new parallel universe, such as a murder
+  mystery story that continues up to the 'final reveal', and then branches into
+  separate branches which implicate each major character!
 
-* Learn about StoryChain
-* Sign up for StoryChain
+## Using *Premise*
 
-### Creating storyLinks
+The core experience in __*Premise*__ involves reading through the moments that
+  form the __central premise__, then following/creating different
+  __story branches__ that evolve from there. In the full version of the app,
+  users would also be able to 'bookmark' specific __moments__, or start at a
+  randomly selected, unread __moment__ somewhere within the __story network__.
 
-As a user, I should be able to:
+### Navigating a story network
 
-* View a random `storyLink` and contribute a new `storyLink` to the `Story Chain`.
-* Contribute to a `Story Chain` to which I have previously contributed, IF
-    I have not created any of the previous 5 `storyLinks` in the `Story Chain`.
-* Reference a character within a `storyLink` using the `@ identifier`.
-* Reference a topic/theme within a `storyLink` using the `# identifier`.
-* Reference a location within a `storyLink` using the `> identifier`.
-* Tag a `storyLink` as 'the end of a story'.
-* Tag a `storyLink` as 'nsfw'.
+As the user encounteres each __moment__, they are presented with four primary
+  navigational options:
+  
+* They may __'continue'__, which guides the user down the longest story branch
+    that grows from their current position. Defaulting to the longest branch not
+    only provides the longest narrative, but helps select for better-developed
+    branches, which will tend to yield higher-quality stories, and create a
+    richer user journey. In the full version of the app, the method for choosing
+    the default __story branch__ would be further optimized.
 
-### Reading storyLinks
+* They may __'explore'__, which takes the user to a randomly selected __moment__,
+    rather than the default branch. This allows users to explore different
+    narrative options. In the full version of the app, users would be able to
+    select from 'most popular', 'newest', or 'most controversial' branch
+    recommendations, in addition to the default 'random' option.
 
-As a user, I should be able to:
+* They may __'create'__, contributing their own __moment__, and starting their
+    own story branch for others to follow (and build upon). Users may create
+    multiple consecutive __moments__ along a branch, allowing them to build a
+    __story branch__ as far as they want.
 
-* Access any `storyLink` I have previously read.
-* Read a `child storyLink` of a `storyLink` I have previously read.
-* View a `Story Network` that shows:
-  * How the `storyLinks` I have read interconnect.
-  * Which `storyLinks` have `unread storyLinks` I can access.
-  * Which `storyLinks` I have created.
-* Upvote or downvote a `storyLink`.
-* Toggle my vote for a `storyLink` between `[up|down|none]`.
-* Tag a `storyLink` as 'the end of a story'.
-* Tag a `storyLink` as 'nsfw'.
-* `Bookmark` `storyLinks` for quick access.
-* Save a `Story Chain` by identifying `first parent` and
-    `last child` `storyLinks`.
-* Export saved `Story Chains` for access outside the app.
+* They may __'step back'__, moving back to the immediate __parent moment__,
+    to either explore a different branch, or to begin creating their own branch.
 
-### Social
+### Primary user interfaces
 
-As a user, I should be able to:
+#### Reading view
 
-* Add `friends` within the app.
-* Invite `friends` to add `storyLinks` to those I've created.
-* See `storyLinks` my `friends` have created (if I have access to the link).
-* See the `storyLinks` my `friends` have `bookmarked`.
-* See which unread `storyLinks` point towards one of my `friends'` `storyLinks`.
-* Invite `friends` to a `Saga` I created.
+In the __'reading view'__, __moments__ will appear sequentially and append to an
+  overall storyline. This view is designed to provide a clean and intuitive
+  reading experience with basic navigational controls. It prioritizes immersion
+  in a single narrative over awareness of the user's location in the overall
+  __story network__.
 
-### Sagas
+#### Network view
 
-As a user, I should be able to:
+The __'network view'__ shows how the user's current __moment__ fits within the
+  overall __story network__. It shows how the __moment__ traces back to the
+  __central premise__, limited information about potential branches going
+  forward, and tracing other __story branches__ the user has previously explored.
+  Initially, this view will serve primarily for jumping between __moments__
+  without having to navigate in a stepwise function. In the full app, this
+  view may be used for highlighting popular or bookmarked __moments__, selecting
+  and sharing __story branches__ with other users, and highlighting the most
+  commonly traveled paths.
+  
+#### Responsive design
 
-* Create a new `Saga`.
-  * Create the `title` & `description` for a new `Saga`.
-  * Seed a new `Saga` with a `Starting Ring`.
-* Make a `Saga` I have created `public` or `invite-only`.
-* Select which `Saga` to access.
-
-### Credits
-
-As a user, I should be able to:
-
-* Earn `credits` to access `ancestor storyLinks` by:
-  * Achieving certain quality contribution goals (e.g., 1k upvotes).
-  * Buy `credits` via micro-transactions (e.g., $1.99 per `credit`).
-* Use `credits` to access `friends'` `created`/`bookmarked` `storyLinks`.
+For mobile (and small tablet) users, the __reading view__ will be the primary
+  layout, with the ability to toggle to the __network view__ for non-stepwise
+  navigation.
+  
+For desktop (and larger tablet) users, the __network view__ and __reading view__
+  will be presented side-by-side.
+  
+![Mobile reading and network views](https://github.com/sjlutterbie/storychain-dev-notes/blob/overview/img/Reading_Network_Views_2018_11_19.jpg)
+![Mobile reading and network views](https://github.com/sjlutterbie/storychain-dev-notes/blob/overview/img/Desktop_Combined_View_2018_11_19.jpg)
