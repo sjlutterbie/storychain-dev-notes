@@ -2,7 +2,7 @@
 
 ## Paper Interfact Test 1
 
-[Paper Interface Test 1](...)
+[Paper Interface Test 1](https://github.com/sjlutterbie/storychain-dev-notes/blob/paper-testing/user-feedback/paperTest1.jpg)
 
 ### Raw notes
 
