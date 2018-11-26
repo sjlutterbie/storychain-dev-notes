@@ -101,22 +101,26 @@
         </div>
         
         <!-- Moment, with CreateMomentForm -->
-        <div class="moment">
+        <div class="moment create-moment-active">
           <div class="create-moment-title">Add a moment</div>
           <p class="moment-text">
             More rapid than eagles his coursers they came, and he whistled, and shouted, and called them by name:
           </p>
           <form name="create-moment-form" class="create-moment-form">
-            <fieldset>
-              <textarea form="create-moment-form"
-                        placeholder="Enter text..."></textarea>
-              <input type="button" class="cancel-create-moment">
-                <i class="material-icons">cancel</i>
-              </input>
-              <input type="submit">
-                <i class="material-icons">check_circle</i>
-              </input>
-            </fieldset>
+            <div class="fieldset-container">
+              <fieldset>
+                <div class="fieldset-contents">
+                  <textarea form="create-moment-form" rows="4"
+                            placeholder="Enter text..."></textarea>
+                  <button class="cancel-create-moment">
+                    <i class="material-icons">clear</i>
+                  </button>
+                  <button class="create-moment-submit">
+                    <i class="material-icons">done</i>
+                  </button>
+                </div>
+              </fieldset>
+            </div>
           </form>
         </div>
         <div class="moment">

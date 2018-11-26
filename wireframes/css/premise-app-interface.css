@@ -98,6 +98,11 @@ main {
     0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
+.controls-active .moment-text {
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
 .moment-controls {
   display: flex;
   flex-flow: row nowrap;
@@ -114,3 +119,54 @@ main {
       0px 2px 2px 0px rgba(0, 0, 0, 0.14),
       0px 3px 1px -2px rgba(0, 0, 0, 0.12);
   }
+  
+/* ======================
+   = CREATE MOMENT FORM =
+   ====================== */
+
+.create-moment-active {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow:  0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+  .create-moment-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+  }
+  
+  .create-moment-active .moment-text {
+    border: 1px solid #ccc;
+    padding: 4px;
+  }
+  
+  .create-moment-form {
+    width: 100%;
+  }
+  
+  .create-moment-form .fieldset-contents {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+    justify-content: space-evenly;
+  }
+  
+  .create-moment-form textarea {
+    width: 100%;
+  }
+  
+  .create-moment-form button {
+    background: none;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-top: 8px;
+  }
+  
