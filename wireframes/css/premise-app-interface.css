@@ -1,0 +1,47 @@
+
+* {
+  box-sizing: border-box;
+}
+
+header, main {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  font-family: 'Roboto', 'San Francisco', sans-serif;
+}
+
+/* ===============
+   = SITE HEADER =
+   =============== */
+
+header {
+  background: #aaa;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+h1 {
+  font-size: 34px;
+  padding: 8px;
+}
+
+  .header-nav {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .header-nav button {
+    border: none;
+    background: none;
+  }
+
+/* ================
+   = MAIN CONTENT =
+   ================ */
