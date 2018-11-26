@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Premise: App interface wireframe</title>
+    <meta name="description" content="Premise app interface, html wireframe">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="./css/reset.css" rel="stylesheet" rel="stylesheet">
+    <link href="./css/premise-app.interface.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+      <div class="site-title">
+        <h1>Premise</h1>
+      </div>
+      <div class="header-nav">
+        <button class="help-nav-button">?</button>
+        <button class="user-menu-button">
+          <i class="material-icons">settings</i>
+        </button>
+        <div class="user-menu"></div>
+      </div>
+    </header>
+    <main>
+      <div class="view-controls">
+        <div class="network-view-button">
+          <i class="material-icons">timeline</i>
+        </div>  
+        <div class="reader-view-button active">
+          <i class="material-icons">subject</i>
+        </div>
+      </div>
+      
+      <div class="reader-view">
+        <div class="moment">
+          <p class="moment-text">
+            'Twas the night before Christmas, when all through the house not a creature was stirring, not even a mouse;
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            The stockings were hung by the chimney with care, in hopes that St. Nicholas soon would be there;
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            The children were nestled all snug in their beds; while visions of sugar-plums danced in their heads;
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            And mamma in her 'kerchief, and I in my cap, had just settled our brains for a long winter's nap,
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            When out on the lawn there arose such a clatter, I sprang from my bed to see what was the matter.
+          </p>
+        </div>
+        
+        <!-- Moment, with MomentControls -->
+        <div class="moment">
+          <p class="moment-text">
+            Away to the window I flew like a flash, tore open the shutters and threw up the sash.
+          </p>
+          <div class="moment-controls">
+            <div class="create-moment-button">
+              <i class="material-icons">edit</i>
+            </div>
+            <div class="next-moment-button">
+              <i class="material-icons">arrow_downward</i>
+            </div>
+            <div class="switch-chain-button">
+              <i class="material-icons">arrow_forward</i>
+            </div>
+          </div>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            The moon on the breast of the new-fallen snow, gave a lustre of midday to objects below,
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            When what to my wondering eyes did appear, but a miniature sleigh and eight tiny rein-deer,
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            With a little old driver so lively and quick, I knew in a moment he must be St. Nick.
+          </p>
+        </div>
+        
+        <!-- Moment, with CreateMomentForm -->
+        <div class="moment">
+          <div class="create-moment-title">Add a moment</div>
+          <p class="moment-text">
+            More rapid than eagles his coursers they came, and he whistled, and shouted, and called them by name:
+          </p>
+          <form name="create-moment-form" class="create-moment-form">
+            <fieldset>
+              <textarea form="create-moment-form"
+                        placeholder="Enter text..."></textarea>
+              <input type="button" class="cancel-create-moment">
+                <i class="material-icons">cancel</i>
+              </input>
+              <input type="submit">
+                <i class="material-icons">check_circle</i>
+              </input>
+            </fieldset>
+          </form>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            "Now, Dasher! now, Dancer! now Prancer and Vixen! On, Comet! on, Cupid! on, Donner and Blitzen!
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            To the top of the porch! to the top of the wall! Now dash away! dash away! dash away all!"
+          </p>
+        </div>
+        <div class="moment">
+          <p class="moment-text">
+            As leaves that before the wild hurricane fly, when they meet with an obstacle, mount to the sky;
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
