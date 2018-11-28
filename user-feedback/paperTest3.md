@@ -2,7 +2,7 @@
 
 ## Paper Interface Test 3 (2018-11-28)
 
-![Paper Interface Test 3](https://github.com/sjlutterbie/storychain-dev-notes/blob/paper-testing/user-feedback/paperTest3.jpg)
+![Paper Interface Test 3](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/user-feedback/paperTest3.jpg)
 
 ### Takeaways:
 
