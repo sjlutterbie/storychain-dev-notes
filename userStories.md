@@ -24,8 +24,7 @@ As a user, I can **consume** or **create** content, and I can do so
 
 * __Consuming:__
   * As a user, I can *quickly* start reading a `story chain`.
-  * As a user, I can read a `story chain` almost as easily as a social media feed.
-    * _'Almost as easily' = Navigation requires clicking instead of scrolling._
+  * As a user, I can read a `story chain` as easily as a social media feed.
   * As a user, I can traverse the `story network`.
   * As a user, I can see my position within the overall `story network`.
   * As a user, I can see which `moments` I have previously encountered in the
@@ -49,7 +48,7 @@ As a user, I can **consume** or **create** content, and I can do so
   * As a user, I can add a `moment` at any location in the `story network`.
   * As a user, I can add consecutive `moments`.
   * As a user, I can see which `moments` in the `story network` I created.
-  * As a user, I can create a `public central premise`, for opne collaboration.
+  * As a user, I can create a `public central premise`, for open collaboration.
   * As a user, I can create a `private central premise`, for invitation-only
     collaboration.
   * As a user, I can view feedback on `moments` I have created.
