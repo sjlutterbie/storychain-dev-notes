@@ -1,5 +1,11 @@
 # Userflows
 
+![Combined userflow sketches](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/img/userFlows_Combined.jpg)
+![userFlows 1](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/img/userFlows_1.jpg)
+![userFlows 2](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/img/userFlows_2.jpg)
+![userFlows 3](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/img/userFlows_3.jpg)
+![userFlows 4](https://github.com/sjlutterbie/storychain-dev-notes/blob/master/img/userFlows_4.jpg)
+
 ## Landing Page
 
 | User action                               | Event                        |
